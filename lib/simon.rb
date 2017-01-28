@@ -39,7 +39,7 @@ class Simon
     add_random_color
     @seq.each do |color|
       print color.colorize(COLOR_CODE[color])
-      sleep(1)
+      sleep(0.5)
       erase_line
     end
   end
@@ -47,7 +47,7 @@ class Simon
   def erase_line
     print "\r"
     print "       "
-    sleep(0.5)
+    sleep(0.25)
     print "\r"
   end
 
@@ -141,7 +141,7 @@ class Simon
   end
 
   def show_record
-    puts "RECORD HISTORY\n "
+    puts "\nRECORD HISTORY\n "
     puts "  |Name     |Record"
     puts "--------------------"
     @record.each_with_index do |rec, index|
