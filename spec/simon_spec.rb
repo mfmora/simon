@@ -1,4 +1,5 @@
 require 'simon'
+require 'colorize'
 
 describe Simon do
   subject(:simon) { Simon.new }
